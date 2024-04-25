@@ -7,7 +7,9 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 # Installation
 Setting up (recommended in Linux or MacOS)
+
 __Linux__
+
 - Open PowerShell or Windows Command Prompt in **administrator** mode by right-clicking and selecting "Run as administrator"
 - Enter the wsl --install command, which will enable features to run WSL and will install the Ubuntu distribution of Linux
 ![image](https://github.com/Aspiringdeveloper123/hangman785/assets/43377891/a4a8d6d7-288c-42ea-a58d-96182a2cec40)
