@@ -37,7 +37,11 @@ Open up VS Code
 - Installing VS Code extensions provides an interative way of running Python code. To install any extension, go on VS Code, and click on 'Extensions', and from the menu, we will install Python and Jupyter
 
 
+# Usage instructions
 
+# File structure of the project
+
+# License information
 
 
 
