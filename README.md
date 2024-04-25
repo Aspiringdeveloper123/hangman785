@@ -22,5 +22,22 @@ __Linux__
 
 After running the last command, close your terminal and open a new one, for the changes to take place
 
+- Installing Python
+
+![image](https://github.com/Aspiringdeveloper123/hangman785/assets/43377891/261819d6-2b76-4a56-8da8-1b4e4381834e)
+
+Make sure to press 'Y' when the 'Do you want to continue?' question comes up.
+
+- Installing VS Code - a free source code editor that fully supports Python and has other useful features e.g debugging, syntax highlighting etc
+
+![image](https://github.com/Aspiringdeveloper123/hangman785/assets/43377891/458cf968-0252-41d3-a97a-c1bc7ae93316)
+
+Open up VS Code
+
+- Installing VS Code extensions provides an interative way of running Python code. To install any extension, go on VS Code, and click on 'Extensions', and from the menu, we will install Python and Jupyter
+
+
+
+
 
 
