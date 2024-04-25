@@ -18,5 +18,7 @@ __Linux__
 
 ![image](https://github.com/Aspiringdeveloper123/hangman785/assets/43377891/48b7c006-c8dd-4a01-92b4-52bd96c21349)
 
+After running the last command, close your terminal and open a new one, for the changes to take place
+
 
 
