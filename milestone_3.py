@@ -1,23 +1,18 @@
 import random
 
-# this file will contain the code for the first milestone
-# create list of your 5 favourite fruits
 list_of_favourite_fruits = ["Strawberry", "Watermelon", "Mango", "Pineapple", "Kiwi"]
 print(list_of_favourite_fruits)
 
 randomly_generated_fruit = random.choice(list_of_favourite_fruits)
 print(randomly_generated_fruit)
 
-guess_the_letter = input("Enter a single letter: ")
+while True:  # let the code run continuosly 
+    guess_the_letter = input("Enter a single letter: ")
 
-def validate_input(user_input):
-    return len(guess_the_letter) == 1 and guess_the_letter.isalpha()
+    if len(guess_the_letter) == 1 and guess_the_letter.isalpha():
+        break
 
-if validate_input(guess_the_letter):
-    print("Good guess!")
+    else:   
+        print("Invalid letter. Please, enter a single alphabetical character")
 
-else: 
-    print(" Oops! That is not a valid input")
-
-
-
+print("Good guess")
