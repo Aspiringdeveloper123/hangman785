@@ -36,24 +36,24 @@ class Hangman():
         def _check_guess_in_word(self, guess):
 
             #check if the guessed letter (`guess`) is in the word to be guessed
-            if guess in randomly_generated_fruit.lower():
+            if guess in self.randomly_generated_fruit.lower():
                 print(f'"Good guess! {guess} is in the word")')
        
             # create a for loop which loops through the letters in randomly_generated_fruit
             #enumerate gets us the index and corresponding character during each iteration
             #index tells us the position of the current character within the word
-                for index, letter in enumerate(randomly_generated_fruit):
+                for index, letter in enumerate(self.randomly_generated_fruit):
                     #check if the current looped letter in the word matches the guessed letter (guess)
                     if letter == guess:
                     # update the corresponding position in the word_guessed list with the correct letter.
                     # the index variable tells us the position of the current letter in the word
                         self.word_guessed[index] = letter 
                 
-                    else:
-                        self.num_lives -= 1
-                        print("Sorry, {guess} is not in the word")
-                        print("You have {num_lives} lives left")
-                    self.num_letters -= 1
+            else:
+                self.num_lives -= 1
+                print("Sorry, {guess} is not in the word")
+                print("You have {num_lives} lives left")
+                self.num_letters -= 1
 
         def _ask_for_valid_user_input(self):
             while True:  # let the code run continuosly 
