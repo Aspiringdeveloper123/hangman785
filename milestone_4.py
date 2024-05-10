@@ -39,15 +39,13 @@ class Hangman():
         
         '''
 
-        def _check_guess_in_word(self, guess):
-        
+        def _check_guess_in_word(self, guess):   
             '''
             This function is used to check  if the guessed letter (`guess`) is present in the word to be guessed
 
             Returns: 
                 str: "Good guess! {guess} is in the word" if the letter is in the word and updates the corresponding position in the word_guessed list with the correct letter  
             '''
-        
             if guess in self.randomly_generated_fruit.lower():
                 print(f'"Good guess! {guess} is in the word")')
        
@@ -68,14 +66,12 @@ class Hangman():
                 self.num_letters -= 1
 
         def _ask_for_valid_user_input(self):
-
             '''
             This function is used ask for valid user input
 
             Returns: 
                  If input is valid, the letter will be appended to the list_of_guesses
             '''
-
             while True:  # let the code run continuosly 
                 guess = input("Guess the letter: ").lower() #.lower() applied directly to the input function
                 if validate_guess and not already_guessed:
@@ -83,20 +79,17 @@ class Hangman():
                     self.list_of_guesses.append(guess) #captures guesses that are not already in the list hence it says "and not"
                 break   # to break out of the loop
         
-        def validate_guess(self, guess):   #need to condition to explain what happens when this condition is true (seen above)
-            
+        def validate_guess(self, guess):   #need to condition to explain what happens when this condition is true (seen above)         
             '''
             This function is used to validate the guess, to ensure it's a single alphabetical character
 
             Returns: 
                 str: "Invalid letter. Please, enter a single alphabetical character" 
-            '''
-            
+            '''   
             if len(guess) != 1 or not guess.isalpha():
                     print("Invalid letter. Please, enter a single alphabetical character")
 
-        def already_guessed(self,guess):  
-            
+        def already_guessed(self,guess):            
             '''
             This function is to let the user know they have already entered a letter tried previously
 
