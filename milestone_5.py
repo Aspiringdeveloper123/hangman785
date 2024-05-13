@@ -1,5 +1,5 @@
 import random
-list_of_fruits = ["Strawberry", "Watermelon", "Mango", "Pineapple", "Kiwi"]
+list_of_fruits = ["Kiwi"]
 randomly_generated_fruit = random.choice(list_of_fruits)
 print(randomly_generated_fruit)
 
@@ -20,7 +20,7 @@ class Hangman():
     
     def __init__(self, list_of_fruits, list_of_guesses=[], num_lives=5 ):  #that game needs to run the player puts in
       
-        self.randomly_generated_fruit = random.choice(list_of_fruits)
+        self.randomly_generated_fruit = random.choice(list_of_fruits).lower()  #add lower to convert the word to lowercase immediately
         self.word_guessed = ["_"] * len(self.randomly_generated_fruit)   #class variable which has been assigned a value
         self.num_letters = len(set(randomly_generated_fruit))  
         self.list_of_fruits = list_of_fruits
@@ -70,14 +70,16 @@ class Hangman():
             in the word_guessed list with the correct letter  
 
         '''
-        print(self.word_guessed)
-        if guess in self.randomly_generated_fruit.lower():
+        print(self.randomly_generated_fruit)
+        current_fruit = self.randomly_generated_fruit
+        if guess in current_fruit:
             print(f'"Good guess! {guess} is in the word")')
        
             # create a for loop which loops through the letters in randomly_generated_fruit
             #enumerate gets us the index and corresponding character during each iteration
             #index tells us the position of the current character within the word
-            for index, letter in enumerate(self.randomly_generated_fruit):
+            for index, letter in enumerate(current_fruit):
+                print(self.word_guessed)
                 #check if the current looped letter in the word matches the guessed letter (guess)
                 if letter == guess:
                     # update the corresponding position in the word_guessed list with the correct letter.
@@ -113,7 +115,7 @@ class Hangman():
            
  
 num_lives = 5
-list_of_fruits = ["Strawberry", "Watermelon", "Mango", "Pineapple", "Kiwi"]
+list_of_fruits = ["Kiwi"]
 game = Hangman(list_of_fruits)   #instance of the class, to call the class 
 game._play_game()
 
