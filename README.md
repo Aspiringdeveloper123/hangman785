@@ -10,7 +10,7 @@
 <a name="Description-of-project"></a>
 
 # Description of Project:
-**Aims**
+**Aims**:
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
@@ -80,7 +80,15 @@ Open up VS Code
 <a name="File-structure-of-the-project"></a>
 
 # File structure of the project
+```Hangman_Project/``` The main directory for the project.
 
+```hangman785``` Directory containing the relevant files for the project.
+
+```milestone_2.py```, ```milestone_3.py```, ```milestone_4.py``` are all test files, contained within the hangman785 directory.
+
+```milestone_2.py```  the finalised code contained within the hangman785 directory.
+
+```README.md``` contains the project documentation
 
 <a name="License-information"></a>
 
