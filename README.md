@@ -38,10 +38,22 @@ Open up VS Code
 
 
 # Usage instructions
+## How to play
+1. Clone or download the repository to your local machine.
+2. Open a terminal or command prompt and navigate to the directory where the main.py file is located.
+3. Run the main.py file in a Python environment by entering the following command: python main.py
+4. The game will choose a random word from the ``` list_of_fruits ```  and display the word as a series of dashes, representing the letters in the word.
+5. Guess one letter at a time by typing it into the command prompt and pressing Enter
+6. If the letter is in the word, it will be revealed in the correct position(s) in the word.
+7. If the letter is not in the word, you will lose one life, where if you have more than 0 lives, you will be prompted to guess again
+8. If you have already guessed the same letter, you will be prompted to guess again
+9. If you don't have any more lives, you have lost!
+10. If you have guessed all the letters correctly with more than 0 lives, you have won! 
+
 
 # File structure of the project
 
 # License information
-- Methods are categorised as **PROTECTED**
+- **MIT License**
 
 
