@@ -1,16 +1,19 @@
 # Hangman Game
 
 # Table of Contents
-- [Description of Project]
-- [Installation instructions]
-- [Usage instructions]
-- [File structure of the project]
-- [License information]
+- [Description of Project](#description-of-project)
+- [Installation instructions](#installation-instructions)
+- [Usage instructions](#usage-instructions)
+- [File structure of the project](#file-structure-of-the-project)
+- [License information](#license-information)
+
+<a name="Description-of-project"></a>
 
 # Description of Project:
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
+<a name="Installation-instructions"></a>
 # Installation instructions
 Setting up (recommended in Linux or MacOS)
 
@@ -42,6 +45,7 @@ Open up VS Code
 
 - Installing VS Code extensions provides an interative way of running Python code. To install any extension, go on VS Code, and click on 'Extensions', and from the menu, we will install Python and Jupyter
 
+<a name="Usage-instructions"></a>
 
 # Usage instructions
 ## How to play
@@ -56,8 +60,11 @@ Open up VS Code
 9. If you don't have any more lives, you have lost!
 10. If you have guessed all the letters correctly with more than 0 lives, you have won! 
 
+<a name="File-structure-of-the-project"></a>
 
 # File structure of the project
+
+<a name="License-information"></a>
 
 # License information
 MIT License
