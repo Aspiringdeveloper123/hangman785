@@ -42,6 +42,6 @@ Open up VS Code
 # File structure of the project
 
 # License information
-
+- Methods are categorised as **PROTECTED**
 
 
