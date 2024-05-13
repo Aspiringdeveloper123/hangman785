@@ -15,15 +15,15 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 **Learnings**
-- **Object Oriented Programming**
-  The project was created using the class ```Hangman``` which acted as a blueprint for creating instances of that class.
-  Created many methods witin the class to define behaviours within the game
-  Attributes were also created to store information about the game 
-  Privacy and access control using Protected Methods seen by a single underscore prefix
-- **Docstrings**
-  Docstrings were used to document code and explain the code to the user or another developer. Docstrings were provided for     each method
-- **Flow control**
-  Used loops such as the ```while``` loop and conditional statements such as ```if```, ```elif```, and ```else``` which   
+**Object Oriented Programming**
+ - The project was created using the class ```Hangman``` which acted as a blueprint for creating instances of that class.
+ - Created many methods witin the class to define behaviours within the game
+ - Attributes were also created to store information about the game 
+ - Privacy and access control using Protected Methods seen by a single underscore prefix
+**Docstrings**
+ - Docstrings were used to document code and explain the code to the user or another developer. Docstrings were provided for     each method
+**Flow control**
+ - Used loops such as the ```while``` loop and conditional statements such as ```if```, ```elif```, and ```else``` which   
   controlled the flow of the game
   
 
