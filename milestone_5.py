@@ -70,6 +70,7 @@ class Hangman():
             in the word_guessed list with the correct letter  
 
         '''
+        print(self.word_guessed)
         if guess in self.randomly_generated_fruit.lower():
             print(f'"Good guess! {guess} is in the word")')
        
