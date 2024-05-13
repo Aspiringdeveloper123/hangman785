@@ -27,6 +27,7 @@ class Hangman():
         self.list_of_guesses = list_of_guesses 
         self.num_lives = num_lives
 
+        print("Letters in the word to be guessed:", self.word_guessed)  #this is indented
 
     def _play_game(self):
         '''
@@ -46,18 +47,20 @@ class Hangman():
         '''
 
         print(self.list_of_fruits)
-
+    
     
         while True:
             if self.num_lives == 0:
-                return "You lost!"
+                print("You lost!")
+                return #add a return so it will end the while True, can't just have a print statement
                
             
             elif self.num_letters > 0 and self.num_lives > 0:
                 self._ask_for_valid_user_input()
 
             elif not self.num_lives == 0 and self.num_letters < 1:
-                return "Congratulations. You won the game!"
+                print("Congratulations. You won the game!")
+                return
                
   
 
@@ -71,7 +74,7 @@ class Hangman():
 
         '''
         print(self.randomly_generated_fruit)
-        current_fruit = self.randomly_generated_fruit
+        current_fruit = self.randomly_generated_fruit.lower()
         if guess in current_fruit:
             print(f'"Good guess! {guess} is in the word")')
        
@@ -79,13 +82,14 @@ class Hangman():
             #enumerate gets us the index and corresponding character during each iteration
             #index tells us the position of the current character within the word
             for index, letter in enumerate(current_fruit):
-                print(self.word_guessed)
+                
                 #check if the current looped letter in the word matches the guessed letter (guess)
                 if letter == guess:
                     # update the corresponding position in the word_guessed list with the correct letter.
                     # the index variable tells us the position of the current letter in the word
                     self.word_guessed[index] = letter 
             self.list_of_guesses.append(guess) #captures guesses that are not already in the list hence it says "and not"
+            print(self.word_guessed)  #printed after the loop to show the current state of the word
             self.num_letters -= 1
         else:
             self.num_lives -= 1
@@ -110,7 +114,7 @@ class Hangman():
             elif guess in self.list_of_guesses:
                 print( "You already tried that letter")
             else:
-                self._check_guess_in_word(guess) #then runs the code in the method - "check_guess_in_word"
+                self._check_guess_in_word(guess) #then runs the code in the method seen in "check_guess_in_word"
                 break
            
  
